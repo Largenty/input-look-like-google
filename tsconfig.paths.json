@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*"],
+      "@/*": ["*"],
+      "@api/*": ["src/api"],
+      "@assets/*": ["src/assets"],
+      "@components/*": ["src/components"],
+      "@contexts/*": ["src/contexts"],
+      "@environments/*": ["src/environments"],
+      "@pages/*": ["src/pages"],
+      "@scss/*": ["src/scss"],
+      "@utils/*": ["src/utils"]
+    }
+  }
+}

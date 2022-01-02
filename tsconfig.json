@@ -1,0 +1,35 @@
+{
+  "extends": "./tsconfig.paths.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "paths": {
+      "*": ["node_modules/*"],
+      "@/*": ["*"],
+      "@api/*": ["src/api"],
+      "@assets/*": ["src/assets"],
+      "@components/*": ["src/components"],
+      "@contexts/*": ["src/contexts"],
+      "@environments/*": ["src/environments"],
+      "@pages/*": ["src/pages"],
+      "@scss/*": ["src/scss"],
+      "@utils/*": ["src/utils"]
+    }
+  },
+  "include": ["src/**/*", "server.js"],
+  "exclude": ["node_modules", "build"]
+}
