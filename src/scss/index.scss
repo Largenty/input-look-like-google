@@ -1,5 +1,12 @@
 // Reset
 @import "./reset/reset";
+
+$black: #1d2b3a;
+$black-25: rgba(255, 255, 255, 0.25);
+$green: #00dfc4;
+$white: #fff;
+
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +21,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   gap: 30px;
-  background: #1d2b3a;
+  background: $black;
 }
 
 .inputBox {
@@ -24,11 +31,11 @@ body {
   & input {
     width: 100%;
     padding: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    background: #1d2b3a;
+    border: 1px solid $black-25;
+    background: $black;
     border-radius: 5px;
     outline: none;
-    color: #fff;
+    color: $white;
     font-size: 1em;
     transition: 0.5s;
   }
@@ -39,23 +46,23 @@ body {
     padding: 10px;
     pointer-events: none;
     font-size: 1em;
-    color: rgba(255, 255, 255, 0.25);
+    color: $black-25;
     text-transform: uppercase;
     transition: 0.5s;
   }
 
   & input:valid,
   input:focus {
-    border: 1px solid #00dfc4;
+    border: 1px solid $green;
 
     & ~ label {
-      color: #00dfc4;
+      color: $green;
       transform: translateX(10px) translateY(-7px);
       font-size: 0.65em;
       padding: 0 10px;
-      background: #1d2b3a;
-      border-left: 1px solid #00dfc4;
-      border-right: 1px solid #00dfc4;
+      background: $black;
+      border-left: 1px solid $green;
+      border-right: 1px solid $green;
       letter-spacing: 0.2em;
     }
   }
@@ -65,9 +72,9 @@ body {
 
 .inputBox:nth-child(2) input:valid ~ label,
 .inputBox:nth-child(2) input:focus ~ label {
-  background-color: #00dfc4;
+  background-color: $green;
   padding: 0.2em 1em ;
-  color: #1d2b3a;
+  color: $black;
   border-radius: 5px;
 }
 
@@ -77,5 +84,5 @@ body {
 
 p {
   margin-top: 2em;
-  color: #00dfc4;
+  color: $green;
 }
