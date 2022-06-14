@@ -1,14 +1,9 @@
 import React from "react";
-import Loader from "./components/loader/Loader";
-import AppRoutes from "./utils/routes/AppRoutes";
+import Home from "./pages/Home";
+import "./scss/index.scss"
 
 const App = () => {
-  return (
-    <React.Suspense fallback={<Loader />}>
-      <AppRoutes />
-      <p>{process.env.REACT_APP_API_END_POINT}</p>
-    </React.Suspense>
-  );
+  return <Home />;
 };
 
 export default App;
